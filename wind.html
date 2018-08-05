@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Visualization Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ 
+</head>
+
+<body class="bg-light">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <!-- Brand/logo -->
+  <a class="navbar-brand bg-dark p-2" href="index.html">Latitude</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+ </button>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  
+    <ul class="navbar-nav ml-auto">
+      
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Plots
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="temp.html">Max Temperature</a>
+        <a class="dropdown-item" href="humidity.html">Humidity</a>
+        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+        <a class="dropdown-item" href="wind.html">Wind Speed</a>
+      </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="comparison.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8">
+     <div class="shadow-sm p-4 mb-4 bg-white">
+      <h1 class="text-center">Wind Speed</h1>
+      <hr class="p-2">
+      <img src="WindSpeed.png" class="mx-auto d-block pb-3">
+      <p>Latitude does not appear to have an effect on wind speed. The correlation between latitude and wind speed is weak.</p>
+      <p>The Northern Hemisphere has more data points, which is expected since the Northern Hemisphere also contains greater land-mass than the southern hemisphere</p>
+      <p>Our data did show a variation of wind speed at the same latitude.</p>
+      <hr class="d-sm-none"></div>
+    </div>
+    <div class="col-md-4">
+	  <div class="shadow-sm p-4 mb-4 bg-white">
+      <h3 class="text-center">Visualizations</h3>
+      <hr class="p-2">
+	  <div class="row">
+         <div class="col-xs-6 col-sm-3 col-md-6">
+            <a  href="temp.html"><img src="MaxTmp.png" alt="Max Temperature" class="img-fluid p-2"></a>
+         </div>
+         <div class="col-xs-6 col-sm-3 col-md-6">
+            <a href="humidity.html"><img src="Humidity.png" alt="Humidity" class="img-fluid p-2"></a>
+         </div>
+         <div class="col-xs-6 col-sm-3 col-md-6">
+            <a href="cloudiness.html"><img src="Cloudiness.png" alt="Cloudiness" class="img-fluid p-2" ></a>
+         </div>
+         <div class="col-xs-6 col-sm-3 col-md-6">
+           <a href="wind.html"><img src="WindSpeed.png" alt="Wind Speed" class="img-fluid p-2 border border-primary" ></a>
+         </div>
+	</div>
+    </div>
+	 
+      <br>
+      <hr class="d-sm-none"></div>
+    </div>
+  </div>
+  
+  <div class="row bg-dark p-2">
+      <div class="col-md-12">
+       <h6 class="text-center">Ira Petric-Buchberger | Data Science Bootcamp | Rutgers University</h6>
+	  </div>
+ </div>
+</div>
+
+
+
+</body>
+</html>
